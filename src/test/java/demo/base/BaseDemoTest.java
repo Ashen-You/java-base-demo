@@ -25,4 +25,16 @@ public class BaseDemoTest {
 
         assertEquals(expected_number, baseDemo.sum(first_number, second_number));
     }
+
+
+    @Test
+    public void should_return_number_out_of_integer() {
+        BaseDemo baseDemo = new BaseDemo();
+
+        int first_number = 1;
+        int second_number = Integer.MAX_VALUE;
+        int expected_number = -2147483648;
+
+        assertEquals(expected_number, baseDemo.sum(first_number, second_number));
+    }
 }
