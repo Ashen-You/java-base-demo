@@ -14,4 +14,15 @@ public class BaseDemoTest {
 
         assertEquals(expected, baseDemo.print());
     }
+
+    @Test
+    public void should_return_number_three() {
+        BaseDemo baseDemo = new BaseDemo();
+
+        int first_number = 1;
+        int second_number = 2;
+        int expected_number = 3;
+
+        assertEquals(expected_number, baseDemo.sum(first_number, second_number));
+    }
 }
